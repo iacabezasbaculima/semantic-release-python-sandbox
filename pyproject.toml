@@ -33,7 +33,7 @@ match = "(main|master)"
 template_dir = "templates"
 changelog_file = "CHANGELOG.md"
 exclude_commit_patterns = [
-    "^(?!(feat|fix|feat!|fix!).*$)",
+    "^(?!(feat|fix|feat!|fix!).*)",
 ]
 
 [tool.semantic_release.changelog.environment]
