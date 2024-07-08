@@ -52,3 +52,8 @@ jobs:
           echo "Released: ${{ steps.python-semantic-release.outputs.released }}"
           echo "Release version: ${{ steps.python-semantic-release.outputs.version }}"
           echo "Release tag: ${{ steps.python-semantic-release.outputs.tag }}"
+
+      - name: Test
+        if: steps.python-semantic-release.outputs.released == 'true'
+        run: |
+          echo "Success! The release was published."
