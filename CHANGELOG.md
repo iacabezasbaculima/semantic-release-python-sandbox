@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.4.0 (2024-07-08)
+
+### Feature
+
+* feat: feature 4 no vcs release (#3) ([`b576349`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/b5763493ef1c7f35b6042d4f206d118259d6340b))
+
 ## v0.3.0 (2024-07-08)
 
 ### Feature
