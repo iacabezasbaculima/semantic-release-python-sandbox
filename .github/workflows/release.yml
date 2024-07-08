@@ -21,6 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
+          token: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
           fetch-depth: 0
 
       - name: Check for major version
@@ -42,7 +43,7 @@ jobs:
         id: python-semantic-release
         uses: python-semantic-release/python-semantic-release@3ba53469e72452e7597dd5c61851e6fbf294420b # v9.8.5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
           root_options: ${{ env.IS_MAJOR_VERSION == 'true' && '--major --noop' || ''}}
 
       - name: Print the release details
