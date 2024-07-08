@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.6.0 (2024-07-08)
+
+### Breaking
+
+* feat!: break 2 ([`232c5e0`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/232c5e07aaed4a1e1c2e1e76c83d472e80207bfa))
+
 ## v0.5.0 (2024-07-08)
 
 ### Breaking
