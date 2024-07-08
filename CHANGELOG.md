@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.0.1 (2024-07-08)
+
+### Fix
+
+* fix: fix 2 ([`d7126c8`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/d7126c8bfee45fc662effedc3ad96a3d869344e3))
+
 ## v1.0.0 (2024-07-08)
 
 ### Breaking
