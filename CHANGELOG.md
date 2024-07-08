@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v0.4.1 (2024-07-08)
+
+### Fix
+
+* fix: fix 1 re-enable vcs release (#4) ([`2301b83`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/2301b83b3ee52a69f50bb78e9452873668d12173))
+
 ## v0.4.0 (2024-07-08)
 
 ### Feature
