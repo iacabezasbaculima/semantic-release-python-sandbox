@@ -1,0 +1,52 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+
+permissions:
+  contents: write
+  id-token: write
+
+concurrency:
+  group: release
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
+        with:
+          fetch-depth: 0
+
+      - name: Check for major version
+        run: |
+          # By default, it's not a major version
+          echo "IS_MAJOR_VERSION=false" >> "$GITHUB_ENV"
+
+          # Retrieve the last commit message
+          LAST_COMMIT_MESSAGE="$(git log -1 --pretty=%B)"
+          echo "Last commit message: $LAST_COMMIT_MESSAGE"
+          
+          # Search for breaking change in the last commit message
+          if echo "$LAST_COMMIT_MESSAGE" | grep -iE "(feat\!|fix\!|breaking change)"; then
+            echo "Found breaking change in the last commit message."
+            echo "IS_MAJOR_VERSION=true" >> "$GITHUB_ENV"
+          fi
+
+      - name: Python Semantic Release
+        id: python-semantic-release
+        uses: python-semantic-release/python-semantic-release@3ba53469e72452e7597dd5c61851e6fbf294420b # v9.8.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          root_options: ${{ env.IS_MAJOR_VERSION == 'true' && '--major --noop' || '--noop'}}
+
+      - name: Print the release details
+        run: |
+          echo "Released: ${{ steps.python-semantic-release.outputs.released }}"
+          echo "Release version: ${{ steps.python-semantic-release.outputs.version }}"
+          echo "Release tag: ${{ steps.python-semantic-release.outputs.tag }}"
