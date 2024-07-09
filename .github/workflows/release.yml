@@ -71,3 +71,8 @@ jobs:
       - name: Publish Release
         run: |
           poetry run semantic-release publish --tag ${{ steps.python-semantic-release.outputs.tag }}
+
+      - name: Print values
+        run: |
+          echo $GITHUB_PATH
+          echo $GITHUB_WORKSPACE
