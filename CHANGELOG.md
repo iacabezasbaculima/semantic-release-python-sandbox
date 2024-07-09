@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.3.0 (2024-07-09)
+
+### Feature
+
+* feat: try again to add assets to gh release ([`bf8e93f`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/bf8e93fa3cd794570608ee0151b746b1c65e5f53))
+
 ## v1.2.0 (2024-07-09)
 
 ### Feature
