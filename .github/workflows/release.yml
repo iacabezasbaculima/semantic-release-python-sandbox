@@ -70,4 +70,4 @@ jobs:
 
       - name: Publish Release
         run: |
-          semantic-release publish --tag ${{ steps.python-semantic-release.outputs.tag }}
+          poetry run semantic-release publish --tag ${{ steps.python-semantic-release.outputs.tag }}

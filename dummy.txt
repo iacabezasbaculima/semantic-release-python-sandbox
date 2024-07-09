@@ -19,3 +19,5 @@ fix 2
 Add contents in release folder to GitHub release
 
 Try to add release folder content to GitHub release
+
+Try again to add assets to gh release
