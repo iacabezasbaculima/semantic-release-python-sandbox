@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.1.0 (2024-07-09)
+
+### Feature
+
+* feat: Add contents to GitHub release ([`f7d98ca`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/f7d98ca3a0a88016e4a4957fe0488bd111742265))
+
 ## v1.0.1 (2024-07-08)
 
 ### Fix
