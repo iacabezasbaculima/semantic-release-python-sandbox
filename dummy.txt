@@ -15,3 +15,5 @@ break 2 (failed because of incorrect flag value)
 break 3
 
 fix 2
+
+Add contents in release folder to GitHub release
