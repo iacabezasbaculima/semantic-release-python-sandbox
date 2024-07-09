@@ -17,3 +17,5 @@ break 3
 fix 2
 
 Add contents in release folder to GitHub release
+
+Try to add release folder content to GitHub release
