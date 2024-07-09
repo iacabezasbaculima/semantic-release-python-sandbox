@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.2.0 (2024-07-09)
+
+### Feature
+
+* feat: try gh release with assets ([`3a68de5`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/3a68de58efbcf5bbea56c7f2a44726ae0fbd98da))
+
 ## v1.1.0 (2024-07-09)
 
 ### Feature
