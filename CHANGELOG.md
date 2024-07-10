@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v1.5.0 (2024-07-10)
+
+### Feature
+
+* feat: use justfile to install deps ([`f225d70`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/f225d70b03e7c491dc664c1ccfc918a3f491f7ec))
+
 ## v1.4.0 (2024-07-10)
 
 ### Feature
