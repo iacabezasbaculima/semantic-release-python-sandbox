@@ -19,7 +19,7 @@ commit_parser = "angular"
 logging_use_named_masks = false
 major_on_zero = false
 allow_zero_version = true
-no_git_verify = false
+no_git_verify = true
 tag_format = "v{version}"
 
 [tool.semantic_release.branches.main]
