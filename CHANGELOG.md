@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v1.4.0 (2024-07-10)
+
+### Feature
+
+* feat: install pre-commit ([`ad38cab`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/ad38cab5267d071d2fece267c52830813874c8ad))
+
+### Fix
+
+* fix: set no_git_verify = true ([`e18b0c6`](https://github.com/iacabezasbaculima/semantic-release-python-sandbox/commit/e18b0c6b369e1d94a75594ef1da001fcf8a4126c))
+
 ## v1.3.0 (2024-07-09)
 
 ### Feature
