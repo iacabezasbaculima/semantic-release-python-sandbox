@@ -29,12 +29,11 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install Poetry and dependencies
-        run: |
-          pip install --upgrade pip pre-commit
-          pre-commit install
-          pipx install poetry
-          poetry install --no-root
+      - name: Install Just
+        uses: taiki-e/install-action@just
+
+      - name: Install dependencies
+        run: just setup
 
       - name: Check for major version
         run: |
@@ -69,3 +68,5 @@ jobs:
         if: steps.python-semantic-release.outputs.released == 'true'
         run: |
           gh release create ${{ steps.python-semantic-release.outputs.tag }} --generate-notes release/*
+        env:
+          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
